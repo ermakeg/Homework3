@@ -35,20 +35,20 @@ public class Main {
         short allSheets = 480;
         short allPupils = (short) (lydmilaPupils + annPupils + ekaterinaPupils);
         System.out.println("Всего в трех классах обучается " + allPupils + " учеников.");
-        short sheetOnOnePupil = (short) (allSheets/allPupils);
-        System.out.println("На каждого ученика рассчитано " + sheetOnOnePupil + " листов буаги.");
+        short sheetOnOnePupil = (short) (allSheets / allPupils);
+        System.out.println("На каждого ученика рассчитано " + sheetOnOnePupil + " листов бумаги.");
 
         byte performInTwoMin = 16;
         System.out.println("За 2 минуты машина произвела " + performInTwoMin + " штук бутылок.");
-        byte performInOneMin = (byte) (performInTwoMin/2);
+        byte performInOneMin = (byte) (performInTwoMin / 2);
         System.out.println("За 1 минуту машина произвела " + performInOneMin + " штук бутылок.");
         short performInTwentyMin = (short) (performInOneMin * 20);
         System.out.println("За 20 минут машина произвела " + performInTwentyMin + " штук бутылок.");
-        short performPerDay = (short) ((performInTwentyMin *3 ) * 24);
+        short performPerDay = (short) (performInOneMin * 1440);
         System.out.println("За сутки машина произвела " + performPerDay + " штук бутылок.");
         int performThreeDays = performPerDay * 3;
         System.out.println("За 3 суток машина произвела " + performThreeDays + " штук бутылок.");
-        int performOneMonth = performThreeDays * 10;
+        int performOneMonth = performPerDay * 30;
         System.out.println("За 1 месяц машина произвела " + performOneMonth + " штук бутылок.");
 
         byte totalJar = 120;
